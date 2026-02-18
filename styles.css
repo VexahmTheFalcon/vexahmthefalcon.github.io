@@ -200,4 +200,28 @@ nav .nav-links a:hover {
   background: rgba(255,255,255,0.08);
   color: #ffffff;
 }
+/* ===== Jump Buttons ===== */
+
+.jump-group {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.jump-link {
+  padding: 8px 14px;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.jump-link:hover {
+  background: #c7d2fe;
+  transform: translateY(-2px);
+}
+
 
