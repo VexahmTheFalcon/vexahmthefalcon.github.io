@@ -6,106 +6,165 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  background-color: #f8f9fb;
-  color: #1a1a1a;
-  line-height: 1.65;
+  background-color: #f8fafc;
+  color: #111827;
+  line-height: 1.7;
 }
 
 /* ===== Layout ===== */
 .container {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 /* ===== Navigation ===== */
 nav {
   background: #0f172a;
-  padding: 18px 0;
+  border-bottom: 1px solid #1e293b;
 }
 
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 24px;
 }
 
 nav a {
-  color: #e5e7eb;
+  color: #e2e8f0;
   text-decoration: none;
-  margin-right: 24px;
+  margin-left: 28px;
   font-size: 15px;
+  transition: opacity 0.2s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  opacity: 0.7;
 }
 
 /* ===== Hero ===== */
 .hero {
-  padding: 80px 0 40px 0;
+  padding: 100px 0 60px 0;
 }
 
 .hero h1 {
-  font-size: 38px;
+  font-size: 42px;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 18px;
-  color: #4b5563;
+  color: #475569;
   max-width: 720px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 6px 12px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #334155;
+}
+
+/* ===== Card System ===== */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card + .card {
+  margin-top: 28px;
+}
+
+/* ===== Table Styling ===== */
+.table-card {
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+tbody tr {
+  transition: background 0.15s ease;
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
 }
 
 /* ===== Headings ===== */
 h2 {
   margin-top: 60px;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 h3 {
-  margin-top: 40px;
+  margin-top: 32px;
   font-size: 20px;
 }
 
-/* ===== Table ===== */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 24px;
+/* ===== Buttons ===== */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
-th, td {
-  padding: 14px;
-  border: 1px solid #e5e7eb;
-  text-align: left;
+.button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
 }
 
-th {
-  background-color: #f1f5f9;
-  font-weight: 600;
-}
-
-/* ===== Links ===== */
-a {
-  color: #1d4ed8;
-}
-
-a:hover {
-  text-decoration: underline;
+/* ===== Guide Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
 }
 
 /* ===== Footer ===== */
 footer {
   background: #0f172a;
-  color: #9ca3af;
-  padding: 40px 0;
-  margin-top: 80px;
+  color: #94a3b8;
+  padding: 60px 0;
+  margin-top: 100px;
   font-size: 14px;
 }
 
@@ -121,5 +180,5 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  opacity: 0.7;
 }
